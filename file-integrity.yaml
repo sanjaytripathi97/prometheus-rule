@@ -24,3 +24,8 @@ spec:
       operator: Exists
 status:
   phase: Active
+
+
+
+oc get fileintegrities -n openshift-file-integrity
+oc get fileintegrities/worker-fileintegrity  -o jsonpath="{ .status.phase }"
